@@ -15,8 +15,8 @@ export class AppComponent {
         this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
     }
 
-    get isAdmin() {
-        return this.currentUser && this.currentUser.role === Role.Admin;
+    get isDoctor() {
+        return this.currentUser && this.currentUser.is_doctor === true;
     }
 
     logout() {

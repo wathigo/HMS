@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-8-role-based-authorization-example"
+    }
+  },
+  "defaultProject": "angular-8-role-based-authorization-example",
+  "cli": {
+    "analytics": "e7ed9b64-bbb5-4745-9457-65ac2a50d0a2"
+  }
 }

@@ -1,7 +1,7 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home';
-import { AdminComponent } from './admin';
+import { DoctorComponent } from './doctor';
 import { LoginComponent } from './login';
 import { AuthGuard } from './_helpers';
 import { Role } from './_models';
@@ -13,10 +13,10 @@ const routes: Routes = [
         canActivate: [AuthGuard]
     },
     {
-        path: 'admin',
-        component: AdminComponent,
+        path: 'doctor',
+        component: DoctorComponent,
         canActivate: [AuthGuard],
-        data: { roles: [Role.Admin] }
+        data: { roles: [Role.Doctor] }
     },
     {
         path: 'login',
